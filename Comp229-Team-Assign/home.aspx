@@ -5,4 +5,7 @@
 
 <asp:Content ID="mainContain" ContentPlaceHolderID="mainContain" runat="server">
     <h1>thi is the project page</h1>
+    <p>
+        This is the firs project for asp.net which me (Syed) and Abubakkar will work together.
+    </p>
 </asp:Content>
