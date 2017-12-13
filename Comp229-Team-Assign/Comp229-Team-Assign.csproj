@@ -68,7 +68,7 @@
   <ItemGroup>
     <Content Include="contact.aspx" />
     <Content Include="Content\homeStyleSheet.css" />
-    <Content Include="home.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <Content Include="main.Master" />
@@ -123,12 +123,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
