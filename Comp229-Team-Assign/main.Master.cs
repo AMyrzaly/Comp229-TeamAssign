@@ -22,5 +22,6 @@ namespace Comp229_Team_Assign
                     break;
             }
         }
-            }
+    }
+
 }

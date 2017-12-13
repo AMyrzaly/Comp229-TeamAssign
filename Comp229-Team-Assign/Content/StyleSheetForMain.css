@@ -19,6 +19,13 @@
     opacity:0.9;
     
 }
+footer {
+	background-color:burlywood;
+	color:darkgreen;
+	font-size: medium;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
 /*
     diffent look for Footer
 */

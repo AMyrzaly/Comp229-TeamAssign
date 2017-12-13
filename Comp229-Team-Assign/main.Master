@@ -41,7 +41,7 @@
 
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="survey.aspx"> <i class="fa fa-user-secret fa-lg" aria-hidden="true"></i> *******</a></li>
+        <li><a href="contact.aspx"> <i class="fa fa-user-secret fa-lg" aria-hidden="true"></i> contact</a></li>
        
       </ul>
     </div><!-- /.navbar-collapse -->
