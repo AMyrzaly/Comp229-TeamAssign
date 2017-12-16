@@ -19,8 +19,9 @@
     </asp:ContentPlaceHolder>
 </head>
 <body id="mainPage">
+    
     <div id="allpage">
-        
+    <img src="images/Global Health Care.png" class="banner" />    
     <form id="form1" runat="server">
     <div>
         <nav class="navbar navbar-default">

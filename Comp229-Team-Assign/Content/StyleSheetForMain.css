@@ -2,9 +2,7 @@
     stylesheet for the masterpage
 */
 #mainPage {
-    background-image: url(../images/MainBkg.jpg);
-    background-size:1400px;
-    background-attachment:fixed;
+    background-color:gray;
 }
 /*
     Customizing the dive content
@@ -40,6 +38,11 @@ footer:hover{
     opacity:0.9;
     color:green;
     font-size:large;
+}
+.banner {
+    width:980px;
+    height:150px;
+   
 }
 
 
