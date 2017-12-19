@@ -8,24 +8,24 @@
                 
                 
                 <label for="firstNameLabel">First Name</label>
-                <asp:TextBox ID="txtFirstName" CssClass="form-control" runat="server" />
+                <asp:TextBox ID="txtbxFirstName" CssClass="form-control" runat="server" />
                 <div>
                     <asp:RequiredFieldValidator ID="txtFirstNameReqFieldValidator"
                         runat="server"
                         CssClass="validationError"
-                        ControlToValidate="txtFirstName"
+                        ControlToValidate="txtbxFirstName"
                         ErrorMessage="* Please enter First Name"
                         ValidationGroup="Registration"
                         required="true" />
                 </div>
 
                 <label for="lastNameLabel">Last Name</label>
-                <asp:TextBox ID="txtLastName" CssClass="form-control" runat="server" />
+                <asp:TextBox ID="txtbxLastName" CssClass="form-control" runat="server" />
                 <div>
                     <asp:RequiredFieldValidator ID="txtLastNameReqFieldValidator"
                         runat="server"
                         CssClass="validationError"
-                        ControlToValidate="txtLastName"
+                        ControlToValidate="txtbxLastName"
                         ErrorMessage="* Please enter Last Name"
                         ValidationGroup="Registration"
                         required="true" />
@@ -250,8 +250,8 @@
         </div>
         <div class="row">
                 
-                <asp:Button runat="server" ID="registerBtn" CssClass="btn btn-success"Text="Create Account"
-                ValidationGroup="Registration" OnClick="registerBtn_Click"/>
+                <asp:Button runat="server" ID="btnRegister" CssClass="btn btn-success" Text="Create Account"
+                ValidationGroup="Registration" OnClick="btnRegister_Click"/>
             </div>
     </div>
 </asp:Content>

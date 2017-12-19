@@ -8,4 +8,6 @@
     <p>
         This is the firs project for asp.net which me (Syed) and Abubakir will work together.
     </p>
+    <asp:Button runat="server" ID="btnToRegistrationPage" Text="To Registration Page" OnClick="btnToRegistrationPage_Click" />
+
 </asp:Content>

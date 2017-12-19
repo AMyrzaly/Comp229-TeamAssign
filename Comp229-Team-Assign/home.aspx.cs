@@ -13,5 +13,10 @@ namespace Comp229_Team_Assign
         {
 
         }
+
+        protected void btnToRegistrationPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("registration.aspx");
+        }
     }
 }

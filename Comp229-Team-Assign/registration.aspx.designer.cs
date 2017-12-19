@@ -13,13 +13,13 @@ namespace Comp229_Team_Assign {
     public partial class registration {
         
         /// <summary>
-        /// txtFirstName control.
+        /// txtbxFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+        protected global::System.Web.UI.WebControls.TextBox txtbxFirstName;
         
         /// <summary>
         /// txtFirstNameReqFieldValidator control.
@@ -31,13 +31,13 @@ namespace Comp229_Team_Assign {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator txtFirstNameReqFieldValidator;
         
         /// <summary>
-        /// txtLastName control.
+        /// txtbxLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLastName;
+        protected global::System.Web.UI.WebControls.TextBox txtbxLastName;
         
         /// <summary>
         /// txtLastNameReqFieldValidator control.
@@ -299,5 +299,14 @@ namespace Comp229_Team_Assign {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ProvinceDropDownList;
+        
+        /// <summary>
+        /// btnRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegister;
     }
 }
