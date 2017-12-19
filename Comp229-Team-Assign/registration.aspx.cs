@@ -25,14 +25,14 @@ namespace Comp229_Team_Assign
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-            conn.Open();
+            
             try
             {
                 // Define data objects. it is taken from demo code. 
                 //conn = new SqlConnection(connectionString);
 
 
-                SqlCommand comm = new SqlCommand("INSERT INTO Students (FirstName,LastName,UserName, Password, Address, City, PostalCode,Email,Telephone,Gender) VALUES(@FirstName, @LastName, @UserName,@Password, @Address,@City, @PostalCode,@Email,@Telephone, @Gender)", conn);
+                SqlCommand comm = new SqlCommand("INSERT INTO Registrations (FirstName,LastName,UserName, Password, Address, City, PostalCode,Email,Telephone,Gender) VALUES(@FirstName, @LastName, @UserName,@Password, @Address,@City, @PostalCode,@Email,@Telephone, @Gender)", conn);
 
                 //paramaterarized quary for saving values to the StudentTable.
                 comm.Parameters.AddWithValue("@FirstName", txtbxFirstName.Text);
@@ -44,6 +44,7 @@ namespace Comp229_Team_Assign
                 comm.Parameters.AddWithValue("@PostalCode", txtPostalCode.Text);
                 comm.Parameters.AddWithValue("@Email", txtEmail.Text);
                 // Open the connection
+                conn.Open();
                 SqlDataReader reader = comm.ExecuteReader();
                 //conn.Open();
                 //executing the query

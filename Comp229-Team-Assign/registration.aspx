@@ -130,47 +130,7 @@
                 </div>
             </div>
             <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
-                <%--Metric button--%>
-                <asp:Button ID="metricBtn" CssClass="btn" Text="Metric" runat="server" />
 
-                <%--Imperial Button--%>
-                <asp:Button ID="imperialBtn" CssClass="btn" Text="Imperial"
-                    
-                    runat="server" /><br />
-                <br />
-
-
-
-                <%--Height--%>
-                <label for="heightLabel">Height</label>
-                <asp:DropDownList ID="HeightDropDownList" runat="server">
-                    <asp:ListItem Text="" Value=""></asp:ListItem>
-                </asp:DropDownList>
-
-
-                <%--Weight--%>
-                <label for="weightLabel">Weight</label>
-                <asp:DropDownList ID="WeightDropDownList" runat="server">
-                    <asp:ListItem Text="" Value=""></asp:ListItem>
-                </asp:DropDownList><br />
-
-                <asp:RequiredFieldValidator ID="HeightReqFieldValidator"
-                    runat="server"
-                    CssClass="validationError"
-                    ControlToValidate="HeightDropDownList"
-                    ErrorMessage="* Please enter Height"
-                    ValidationGroup="Registration"
-                    required="true"
-                    Display="Dynamic" />
-
-                <asp:RequiredFieldValidator ID="WeightReqFieldValidator"
-                    runat="server"
-                    CssClass="validationError"
-                    ControlToValidate="WeightDropDownList"
-                    ErrorMessage="* Please enter Weight"
-                    ValidationGroup="Registration"
-                    required="true"
-                    Display="Dynamic" /><br />
 
 
                 <%--City--%>

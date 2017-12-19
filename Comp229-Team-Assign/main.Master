@@ -43,7 +43,7 @@
 
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="contact.aspx"> <i class="fa fa-user-secret fa-lg" aria-hidden="true"></i> contact</a></li>
+        <li><a href="registration.aspx"> <i class="fa fa-user-plus fa-th-large" aria-hidden="true" f></i> Registration</a></li>
        
       </ul>
     </div><!-- /.navbar-collapse -->
