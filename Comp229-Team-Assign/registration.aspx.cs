@@ -12,11 +12,9 @@ namespace Comp229_Team_Assign
 {
     public partial class registration : System.Web.UI.Page
     {
-        SqlConnection conn;
-        SqlCommand comm;
-
+        SqlConnection conn = new SqlConnection("server=.\\SQLEXPRESS;Database=Comp229TeamAssign; Integrated Security=true");
         // Read the connection string from Web.config
-        string connectionString = ConfigurationManager.ConnectionStrings["Registrations"].ConnectionString;
+        //string connectionString = ConfigurationManager.ConnectionStrings["Registrations"].ConnectionString;
         // Initialize connection
 
         protected void Page_Load(object sender, EventArgs e)
@@ -27,25 +25,31 @@ namespace Comp229_Team_Assign
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
-
+            conn.Open();
             try
             {
                 // Define data objects. it is taken from demo code. 
-                conn = new SqlConnection(connectionString);
+                //conn = new SqlConnection(connectionString);
 
-                comm = conn.CreateCommand();
-                comm.CommandType = CommandType.Text;
-                // Create command and queris
-                comm = new SqlCommand("INSERT INTO Students (FirstName,LastName,EnrollmentDate) VALUES(@FirstName, @LastName, @EnrollmentDate)", conn);
+
+                SqlCommand comm = new SqlCommand("INSERT INTO Students (FirstName,LastName,UserName, Password, Address, City, PostalCode,Email,Telephone,Gender) VALUES(@FirstName, @LastName, @UserName,@Password, @Address,@City, @PostalCode,@Email,@Telephone, @Gender)", conn);
+
                 //paramaterarized quary for saving values to the StudentTable.
                 comm.Parameters.AddWithValue("@FirstName", txtbxFirstName.Text);
                 comm.Parameters.AddWithValue("@LastName", txtbxLastName.Text);
-                comm.Parameters.AddWithValue("@EnrollmentDate", txtBxEnrDate.Text);
+                comm.Parameters.AddWithValue("@UsernName", txtbxUsername.Text);
+                comm.Parameters.AddWithValue("@Password", txtPassword.Text);
+                comm.Parameters.AddWithValue("@Address", txtAddress.Text);
+                comm.Parameters.AddWithValue("@City", txtCity.Text);
+                comm.Parameters.AddWithValue("@PostalCode", txtPostalCode.Text);
+                comm.Parameters.AddWithValue("@Email", txtEmail.Text);
                 // Open the connection
-                conn.Open();
+                SqlDataReader reader = comm.ExecuteReader();
+                //conn.Open();
                 //executing the query
-                comm.ExecuteNonQuery();
+                //
                 //Closing the connection
+                reader.Close();
                 conn.Close();
 
             }

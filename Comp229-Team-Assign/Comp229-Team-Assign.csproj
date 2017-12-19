@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="contact.aspx" />
     <Content Include="Content\homeStyleSheet.css" />
+    <Content Include="Content\RegistrationStyleSheet.css" />
     <Content Include="Home.aspx" />
     <Content Include="images\Global Health Care.png" />
     <Content Include="packages.config" />

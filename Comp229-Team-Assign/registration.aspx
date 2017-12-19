@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="mainContain" ContentPlaceHolderID="mainContain" runat="server">
+    <div id="register">
     <div class="container">
-        <div class="row well">
+        <div class="row well-lg">
             <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
                 
                 
@@ -32,12 +33,12 @@
                 </div>
 
                 <label for="UsernameLabel">Username</label>
-                <asp:TextBox ID="txtUsername" CssClass="form-control" runat="server" />
+                <asp:TextBox ID="txtbxUsername" CssClass="form-control" runat="server" />
                 <div>
                     <asp:RequiredFieldValidator ID="UsernameReqFieldValidator"
                         runat="server"
                         CssClass="validationError"
-                        ControlToValidate="txtUsername"
+                        ControlToValidate="txtbxUsername"
                         ErrorMessage="* Please enter Username"
                         ValidationGroup="Registration"
                         required="true" />
@@ -130,17 +131,11 @@
             </div>
             <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
                 <%--Metric button--%>
-                <asp:Button ID="metricBtn"
-                    CssClass="btn"
-                    Text="Metric"
-                    OnClick="metricBtn_Click"
-                    runat="server" />
+                <asp:Button ID="metricBtn" CssClass="btn" Text="Metric" runat="server" />
 
                 <%--Imperial Button--%>
-                <asp:Button ID="imperialBtn"
-                    CssClass="btn"
-                    Text="Imperial"
-                    OnClick="imperialBtn_Click"
+                <asp:Button ID="imperialBtn" CssClass="btn" Text="Imperial"
+                    
                     runat="server" /><br />
                 <br />
 
@@ -254,4 +249,5 @@
                 ValidationGroup="Registration" OnClick="btnRegister_Click"/>
             </div>
     </div>
+        </div>
 </asp:Content>
