@@ -5,10 +5,10 @@
 <html lang="en">
 
 <head runat="server">
-   <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-       <title></title>
+    <title></title>
     <%--Css section --%>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
@@ -20,51 +20,69 @@
     </asp:ContentPlaceHolder>
 </head>
 <body id="mainPage">
-    
+
     <div id="allpage">
-    <img src="images/Global Health Care.png" class="banner" />    
-    <form id="form1" runat="server">
-    <div>
-        <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="home.aspx" runat="server"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a>
-    </div>
+        <img src="images/Global Health Care.png" class="banner" />
+        <form id="form1" runat="server">
+            <div>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="home.aspx" runat="server"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a>
+                        </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="contact.aspx"> <i class="fa fa-user-secret fa-lg" aria-hidden="true"></i> contact</a></li>
-       
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-        <asp:ContentPlaceHolder ID="mainContain" runat="server">
-
-        
-        </asp:ContentPlaceHolder>
-    </div>
-    </form>
-    <script src="Scripts/jquery-2.2.4.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-        <div> 
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div id="navbar" class="navbar navbar-default navbar-fixed-top" runat="server">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a href="HomePage.aspx">
+                                        <img style="vertical-align: middle; width: 70px; height: 49px; margin-top: 5px; margin-right: 15px;" src="Images/Logo.png" alt="logo" /></a>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <div id="anonymous" runat="server">
+                                        <ul id="navigation" class="nav navbar-nav">
+                                            <li><a runat="server" href="HomePage">Home</a></li>
+                                            <li><a runat="server" href="Departments">Departments</a></li>
+                                            <li><a runat="server" href="AboutPage">About</a></li>
+                                            <li><a runat="server" href="ContactPage">Contacts</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a class="btn btn-info login" runat="server" href="Login">Log in</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+                <asp:ContentPlaceHolder ID="mainContain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <script src="Scripts/jquery-2.2.4.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <div>
 
             <br />
             <br />
             <p></p>
         </div>
 
-    <footer style="height: 22px">&nbsp; ©Copy right Syed Nasir & Abubakir Myrzaly | COMP229| Project| Centennial College</footer>
+        <footer style="height: 22px">&nbsp; ©Copy right Syed Nasir & Abubakir Myrzaly | COMP229| Project| Centennial College</footer>
     </div>
 </body>
 </html>

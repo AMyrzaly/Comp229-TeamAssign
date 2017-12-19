@@ -70,7 +70,8 @@
     <Content Include="Content\homeStyleSheet.css" />
     <Content Include="Content\RegistrationStyleSheet.css" />
     <Content Include="Home.aspx" />
-    <Content Include="images\Global Health Care.png" />
+    <Content Include="Images\Global Health Care.png" />
+    <Content Include="Images\Logo.png" />
     <Content Include="packages.config" />
     <Content Include="registration.aspx" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
