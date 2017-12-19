@@ -53,10 +53,10 @@
                                 <div class="navbar-collapse collapse">
                                     <div id="anonymous" runat="server">
                                         <ul id="navigation" class="nav navbar-nav">
-                                            <li><a runat="server" href="HomePage">Home</a></li>
-                                            <li><a runat="server" href="Departments">Departments</a></li>
-                                            <li><a runat="server" href="AboutPage">About</a></li>
-                                            <li><a runat="server" href="ContactPage">Contacts</a></li>
+                                            <li><a runat="server" class="fa fa-home fa-lg" href="home.aspx"> Home</a></li>
+                                            <li><a runat="server" class="fa fa-list" href="Departments"> Departments</a></li>
+                                            <li><a runat="server" class="fa fa-address-card" href="AboutPage"> About</a></li>
+                                            <li><a runat="server" class="fa fa-envelope-open" href="ContactPage"> Contacts</a></li>
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
                                             <li><a class="btn btn-info login" runat="server" href="Login">Log in</a></li>

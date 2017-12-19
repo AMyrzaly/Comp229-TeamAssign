@@ -19,6 +19,7 @@ h1:hover
 }
 .banner{
     width:980px;
+    margin-top: 57px;
     background-position:top center;
     background-repeat:no-repeat;
 }
