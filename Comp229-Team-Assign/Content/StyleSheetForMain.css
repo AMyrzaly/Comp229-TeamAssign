@@ -17,12 +17,28 @@
     opacity:0.9;
     
 }
+#HomePageImage {
+    width:1020px;
+    background-image:url("../images/imageHomePage.jpg");
+    height:600px;
+    background-repeat:no-repeat;
+    background-size:contain;
+}
 footer {
 	background-color:burlywood;
 	color:darkgreen;
 	font-size: medium;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
+}
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:xx-large;
+    color:chocolate;
+    font-weight:bolder;
+    padding-left:10px;
+    background-color:ActiveCaption;
+
 }
 /*
     diffent look for Footer
