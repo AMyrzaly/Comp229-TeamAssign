@@ -25,7 +25,7 @@
         <img src="images/Global Health Care.png" class="banner" />
         <form id="form1" runat="server">
             <div>
-                <nav class="navbar navbar-default">
+                                <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -39,13 +39,31 @@
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="registration.aspx"><i class="fa fa-user-plus fa-th-large" aria-hidden="true" f></i>Registration</a></li>
-
-                            </ul>
+                        <div id="navbar" class="navbar navbar-default navbar-fixed-top" runat="server">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a href="HomePage.aspx">
+                                        <img style="vertical-align: middle; width: 70px; height: 49px; margin-top: 5px; margin-right: 15px;" src="Images/Logo.png" alt="logo" /></a>
+                                </div>
+                                <div class="navbar-collapse collapse">
+                                    <div id="anonymous" runat="server">
+                                        <ul id="navigation" class="nav navbar-nav">
+                                            <li><a runat="server" href="HomePage">Home</a></li>
+                                            <li><a runat="server" href="Departments">Departments</a></li>
+                                            <li><a runat="server" href="AboutPage">About</a></li>
+                                            <li><a runat="server" href="ContactPage">Contacts</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a class="btn btn-info login" runat="server" href="Login">Log in</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.navbar-collapse -->
                     </div>
