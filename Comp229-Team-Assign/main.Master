@@ -35,7 +35,6 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="home.aspx" runat="server"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
