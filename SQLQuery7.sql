@@ -1,0 +1,1 @@
+﻿INSERT INTO Registrations (FirstName, LastName, UserName, Password, Address, City, PostalCode, Email, Telephone) VALUES('SYED','NASIR','NASIR2005','amin2005','701 Don Mills','Toronto','M3C1R7', 'nasir_2005@msn.com',4160000000);

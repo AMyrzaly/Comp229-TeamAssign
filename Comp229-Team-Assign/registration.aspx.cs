@@ -25,16 +25,12 @@ namespace Comp229_Team_Assign
             // Define data objects. it is taken from demo code. 
             SqlConnection conn;
             SqlCommand comm;
-           // SqlDataReader reader;
             // Read the connection string from Web.config
             string connectionString = ConfigurationManager.ConnectionStrings["Registrations"].ConnectionString;
-            // Initialize connection
-            //conn = new SqlConnection(connectionString);
+
 
             try
             {
-                // Define data objects. it is taken from demo code. 
-                //conn = new SqlConnection(connectionString);
 
                 // Define data objects. it is taken from demo code. 
                 conn = new SqlConnection(connectionString);
@@ -56,12 +52,6 @@ namespace Comp229_Team_Assign
                 // Open the connection
                 conn.Open();
                 comm.ExecuteNonQuery();
-                //SqlDataReader reader = comm.ExecuteReader();
-                //conn.Open();
-                //executing the query
-                //
-                //Closing the connection
-                //reader.Close();
                 conn.Close();
 
             }

@@ -18,6 +18,12 @@
     <link href="Content/RegistrationStyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 52px;
+            text-align: left;
+        }
+    </style>
 </head>
 <body id="mainPage">
 
@@ -52,9 +58,9 @@
                                 <div class="navbar-collapse collapse">
                                     <div id="anonymous" runat="server">
                                         <ul id="navigation" class="nav navbar-nav">
-                                            <li><a runat="server" class="fa fa-home" href="HomePage"> Home</a></li>
+                                            <li><a runat="server" class="fa fa-home" href="Home.aspx"> Home</a></li>
                                             <li><a runat="server" class="fa fa-address-book-o" href="Departments"> Departments</a></li>
-                                            <li><a runat="server" class="fa fa-info" href="AboutPage"> About</a></li>
+                                            <li><a runat="server" class="fa fa-info" href="registation.aspx"> Registration</a></li>
                                             <li><a runat="server" class="fa fa-envelope-o" href="ContactPage"> Contact us</a></li>
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
@@ -84,7 +90,7 @@
             <br />
             <p></p>
         </div>
-        <footer class="footer">&nbsp; ©Copy right Syed Nasir & Abubakir Myrzaly | COMP229| Project| Centennial College</footer>
+        <footer class="auto-style1">&nbsp; ©Copy right Syed Nasir & Abubakir Myrzaly | COMP229| Project| Centennial College</footer>
     </div>
 </body>
 </html>
