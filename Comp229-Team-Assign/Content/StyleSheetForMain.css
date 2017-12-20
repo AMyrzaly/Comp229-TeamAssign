@@ -2,63 +2,85 @@
     stylesheet for the masterpage
 */
 #mainPage {
-    background-color:gray;
+    background-color: white;
 }
 /*
     Customizing the dive content
 */
-#allpage
- {
-    margin-left:auto;
-    margin-right:auto;
-    width:1020px;
-    background-color:azure;
+#allpage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1020px;
+    background-color: white;
     border-radius: 15px;
-    opacity:0.9;
-    
+    opacity: 0.9;
 }
-#HomePageImage {
-    width:1020px;
-    background-image:url("../images/imageHomePage.jpg");
-    height:600px;
-    background-repeat:no-repeat;
-    background-size:contain;
-}
-footer {
-	background-color:burlywood;
-	color:darkgreen;
-	font-size: medium;
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-}
-p{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:xx-large;
-    color:chocolate;
-    font-weight:bolder;
-    padding-left:10px;
-    background-color:ActiveCaption;
 
+#HomePageImage {
+    width: 1020px;
+    position: relative;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+footer {
+    background-color: burlywood;
+    color: darkgreen;
+    font-size: medium;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 10px;
+    position: center;
 }
 /*
     diffent look for Footer
 */
 footer {
-	background-color:white;
-	color:blue;
-	font-size: medium;
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
+    background: #3d4e72;
+    color: #f4f6f9;
+    height: 200px;
+    bottom: 0;
+    text-align: center;
+    padding-top: 15px;
 }
-footer:hover{
-    opacity:0.9;
-    color:green;
-    font-size:large;
-}
+
+    footer:hover {
+        opacity: 0.9;
+        color: green;
+        font-size: large;
+    }
+
 .banner {
-    width:980px;
-    height:150px;
-   
+    width: 980px;
+    height: 150px;
 }
 
+#bgPic {
+    top: -8px;
+    z-index: -1;
+    width: 1020px;
+    height: 350px;
+    border-radius: 5px;
+}
 
+#content{
+    background-color: #ffffff;
+    margin-top: -5px;
+    width: 1020px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to bottom,#ffffff,#808080);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.center{
+    position:center;
+}

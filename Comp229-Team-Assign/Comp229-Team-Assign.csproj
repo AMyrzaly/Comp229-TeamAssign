@@ -70,6 +70,8 @@
     <Content Include="Content\homeStyleSheet.css" />
     <Content Include="Content\RegistrationStyleSheet.css" />
     <Content Include="Home.aspx" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bgMain.jpg" />
     <Content Include="images\Global Health Care.png" />
     <Content Include="images\imageHomePage.jpg" />
     <Content Include="packages.config" />
