@@ -60,6 +60,9 @@
                                         <ul class="nav navbar-nav navbar-right">
                                             <li><a class="fa fa-sign-in" runat="server" href="Login"> Log in</a></li>
                                         </ul>
+                                                                                <ul class="nav navbar-nav navbar-right">
+                                            <li><a class="fa fa-sign-in" runat="server" href="Login"> Log in</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

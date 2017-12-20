@@ -13,6 +13,9 @@
             We are providing healthcare service for thousands of Torontonian.<br />
             Call us or register for an appiontment with our specialists. 
         </p>
-        <asp:Button runat="server" ID="btnToRegistrationPage" Text="To Registration Page" OnClick="btnToRegistrationPage_Click" />
+        <p>
+            If you are not our user, you can register by click button below:
+        </p>
+        <asp:Button class="btn-lg" runat="server" ID="btnToRegistrationPage" Text="To Registration Page" OnClick="btnToRegistrationPage_Click" />
     </div>
 </asp:Content>
