@@ -16,7 +16,7 @@ namespace Comp229_Team_Assign
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            btnRegister.Visible = false;
         }
 
 

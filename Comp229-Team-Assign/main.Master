@@ -64,7 +64,7 @@
                                             <li><a runat="server" class="fa fa-envelope-o" href="ContactPage"> Contact us</a></li>
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
-                                            <li><a class="fa fa-sign-in" runat="server" href="Login"> Log in</a></li>
+                                            <li><a class="fa fa-sign-in" runat="server" href="login.aspx"> Log in</a></li>
                                         </ul>
                                     </div>
                                 </div>

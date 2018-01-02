@@ -74,6 +74,8 @@
     <Content Include="images\bgMain.jpg" />
     <Content Include="images\Global Health Care.png" />
     <Content Include="images\imageHomePage.jpg" />
+    <Content Include="login.aspx" />
+    <Content Include="Content\LoginStyleSheet.css" />
     <Content Include="packages.config" />
     <Content Include="registration.aspx" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
@@ -135,6 +137,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
