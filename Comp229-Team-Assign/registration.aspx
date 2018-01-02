@@ -6,8 +6,6 @@
     <div class="container">
         <div class="row well-lg">
             <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
-                
-                
                 <label for="firstNameLabel">First Name</label>
                 <asp:TextBox ID="txtbxFirstName" CssClass="form-control" runat="server" />
                 <div>
@@ -22,61 +20,6 @@
 
                 <label for="lastNameLabel">Last Name</label>
                 <asp:TextBox ID="txtbxLastName" CssClass="form-control" runat="server" />
-                <div>
-                    <asp:RequiredFieldValidator ID="txtLastNameReqFieldValidator"
-                        runat="server"
-                        CssClass="validationError"
-                        ControlToValidate="txtbxLastName"
-                        ErrorMessage="* Please enter Last Name"
-                        ValidationGroup="Registration"
-                        required="true" />
-                </div>
-
-                <label for="UsernameLabel">Username</label>
-                <asp:TextBox ID="txtbxUsername" CssClass="form-control" runat="server" />
-                <div>
-                    <asp:RequiredFieldValidator ID="UsernameReqFieldValidator"
-                        runat="server"
-                        CssClass="validationError"
-                        ControlToValidate="txtbxUsername"
-                        ErrorMessage="* Please enter Username"
-                        ValidationGroup="Registration"
-                        required="true" />
-                </div>
-                <label for="newPasswordLabel">Password</label>
-                <asp:TextBox ID="txtPassword" CssClass="form-control" TextMode="Password" runat="server" />
-                <div>
-                    <asp:RequiredFieldValidator ID="newPasswordReqFieldValidator"
-                        runat="server"
-                        CssClass="validationError"
-                        ControlToValidate="txtPassword"
-                        ErrorMessage="* Please enter a password"
-                        ValidationGroup="Registration"
-                        required="true" />
-                </div>
-
-  
-                <label for="confirmPassword">Confirm Password</label>
-                <asp:TextBox ID="txtConfirmPassword" CssClass="form-control" TextMode="Password" runat="server" />
-                <div>
-                    <asp:RequiredFieldValidator ID="txtConfirmPasswordReqFieldValidator"
-                        runat="server"
-                        CssClass="validationError"
-                        ControlToValidate="txtConfirmPassword"
-                        ErrorMessage="* Please re-enter password"
-                        ValidationGroup="Registration"
-                        required="true" />
-                </div>
-                <div>
-                    <asp:CompareValidator ID="newPasswordCompareValidator"
-                        runat="server"
-                        ControlToValidate="txtConfirmPassword"
-                        CssClass="validationError"
-                        ControlToCompare="txtPassword"
-                        ErrorMessage="Passwords don't match"
-                        ValidationGroup="Registration"
-                        ToolTip="Password must be the same" />
-                </div>
 
                 <label for="emailLabel">Email</label>
                 <asp:TextBox ID="txtEmail"
@@ -181,7 +124,20 @@
                         ValidationGroup="Registration"
                         required="true" />
                 </div>
-
+                <%--Telephone--%>
+                <label for="telephoneLabel">Telephone</label>
+                <asp:TextBox ID="txtTelephone"
+                    CssClass="form-control"
+                    runat="server" />
+                <div>
+                    <asp:RequiredFieldValidator ID="txtTelephoneReqFieldValidator"
+                        runat="server"
+                        CssClass="validationError"
+                        ControlToValidate="txtTelephone"
+                        ErrorMessage="* Please enter Telephone Number"
+                        ValidationGroup="Registration"
+                        required="true" />
+                </div>
                 <%--Province--%>
                 <label for="birthDateLabel">Province</label>
                 <asp:DropDownList ID="ProvinceDropDownList"

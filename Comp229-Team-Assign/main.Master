@@ -60,7 +60,7 @@
                                         <ul id="navigation" class="nav navbar-nav">
                                             <li><a runat="server" class="fa fa-home" href="Home.aspx"> Home</a></li>
                                             <li><a runat="server" class="fa fa-address-book-o" href="Departments"> Departments</a></li>
-                                            <li><a runat="server" class="fa fa-info" href="registation.aspx"> Registration</a></li>
+                                            <li><a runat="server" class="fa fa-info" href="registration.aspx"> Registration</a></li>
                                             <li><a runat="server" class="fa fa-envelope-o" href="ContactPage"> Contact us</a></li>
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
