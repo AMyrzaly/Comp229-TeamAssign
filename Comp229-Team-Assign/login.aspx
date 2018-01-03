@@ -5,24 +5,25 @@
 <asp:Content ID="mainContains" ContentPlaceHolderID="mainContain" runat="server">
     <div id="login">
 
- 
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">Please Login</h3>
-        </div>
-        <div class="panel-body">
 
-            <div class="form-group">
-                <asp:Label runat="server" ID="lblUserName" >UserName</asp:Label>
-                <asp:TextBox ID="txtUserName" runat="server" class="form-control input-sm" placeholder="User Name" Width="480px"/>
+        <div class="panel panel-default" style="width: 350px; margin-top: 50px; margin-left: 350px">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Please Login</h3>
             </div>
+            <div class="panel-body">
 
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6">
-                    <div class="form-group">
-                        <asp:Label runat="server" ID="lblPassword" >Password</asp:Label>
-                        <asp:TextBox ID="txtPassword" runat="server" class="form-control input-sm" placeholder="Password" TextMode="Password" />
-                    </div>
+                <div class="form-group">
+                    <asp:Label runat="server" ID="lblUserName">UserName</asp:Label>
+                    <asp:TextBox ID="txtUserName" runat="server" class="form-control input-sm" placeholder="User Name" Width="300px" />
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <div class="form-group">
+                            <asp:Label runat="server" ID="lblPassword">Password</asp:Label>
+                            <br />
+                            <asp:TextBox ID="txtPassword" runat="server" class="form-control input-sm" placeholder="Password" TextMode="Password" Width="300px" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -32,12 +33,21 @@
                     <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
                 </div>
             </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
-                    <asp:Button ID="btnLogin" runat="server" Text="Login" class="btn btn-info btn-block" OnClick="btnLogin_Click"/>
-                </div>
+                    <asp:Button ID="btnLogin" runat="server" Text="Login" class="btn btn-default btn-block" OnClick="btnLogin_Click" Width="320px"/>
                 </div>
             </div>
         </div>
-   </div>    
+    </div>
 </asp:Content>

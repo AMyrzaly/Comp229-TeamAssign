@@ -12,7 +12,9 @@ namespace Comp229_Team_Assign
 {
     public partial class login : System.Web.UI.Page
     {
+        //creating connection. 
         SqlConnection con = new SqlConnection();
+        //
         SqlCommand cmd = new SqlCommand();
         SqlDataAdapter sda = new SqlDataAdapter();
         DataSet ds = new DataSet();
@@ -26,10 +28,12 @@ namespace Comp229_Team_Assign
 
             try
             {
-
+                //establising the string connection.
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Registrations"].ConnectionString);
+                //opening the connection. 
                 con.Open();
-                cmd.CommandText = "SELECT * FROM Employee where UserName='" + txtUserName.Text + "'and password ='" + txtPassword.Text + "'";
+                //Generating sql query. 
+                cmd.CommandText = "SELECT * FROM Employee WHERE UserName='" + txtUserName.Text + "'and Password ='" + txtPassword.Text + "'";
                 cmd.Connection = con;
                 sda.SelectCommand = cmd;
                 sda.Fill(ds, "Employee");
@@ -54,7 +58,7 @@ namespace Comp229_Team_Assign
             }
             finally
             {
-                Response.Redirect("registrations.aspx");
+                Response.Redirect("registration.aspx");
             }
         }
 

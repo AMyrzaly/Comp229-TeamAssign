@@ -16,7 +16,7 @@ namespace Comp229_Team_Assign
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnRegister.Visible = false;
+            //btnRegister.Visible = false;
         }
 
 
@@ -33,8 +33,8 @@ namespace Comp229_Team_Assign
             {
 
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Registrations"].ConnectionString);
-                con.Open();
-                string insert = "insert into Registrations(FirstName,LastName,Address,City,PostalCode,Email,Telephone) VALUES(@FirstName,@LastName,@Address,@City,@PostalCode,@Email,@Telephone)";
+                
+                string insert = "insert into Registrations(FirstName,LastName,Address,City,PostalCode,Email,Telephone) VALUES(@FirstName, @LastName, @Address, @City, @PostalCode, @Email, @Telephone)";
                 SqlCommand cmd = new SqlCommand(insert, con);
 
                 cmd.Parameters.AddWithValue("@FirstName", txtbxFirstName.Text);
@@ -44,9 +44,11 @@ namespace Comp229_Team_Assign
                 cmd.Parameters.AddWithValue("@City", txtCity.Text);
                 cmd.Parameters.AddWithValue("@PostalCode", txtPostalCode.Text);
                 cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-
+                //Connection open.
+                con.Open();
+                //command for executing the query
                 cmd.ExecuteNonQuery();
-
+                //closing connection.
                 con.Close();
 
                 // Define data objects. it is taken from demo code. 
