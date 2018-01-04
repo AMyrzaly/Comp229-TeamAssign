@@ -12,54 +12,29 @@ namespace Comp229_Team_Assign
 {
     public partial class login : System.Web.UI.Page
     {
-        //creating connection. 
-        SqlConnection con = new SqlConnection();
-        //
-        SqlCommand cmd = new SqlCommand();
-        SqlDataAdapter sda = new SqlDataAdapter();
-        DataSet ds = new DataSet();
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Registrations"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
-            try
-            {
-                //establising the string connection.
-                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Registrations"].ConnectionString);
-                //opening the connection. 
-                con.Open();
-                //Generating sql query. 
-                cmd.CommandText = "SELECT * FROM Employee WHERE UserName='" + txtUserName.Text + "'and Password ='" + txtPassword.Text + "'";
-                cmd.Connection = con;
-                sda.SelectCommand = cmd;
-                sda.Fill(ds, "Employee");
-                if (ds.Tables[0].Rows.Count > 0)
-                {
-                    lblResult.Text = "Login Success";
-                    lblResult.ForeColor = System.Drawing.Color.Red;
-
-                }
-                else
-                {
-                    lblResult.Text = "Login Failed";
-                    lblResult.ForeColor = System.Drawing.Color.Red;
-
-                }
-            }
-
-            catch (Exception)
-            {
-
-
-            }
-            finally
+            conn.Open();
+            string query = "SELECT COUNT(1) from Employee WHERE UserName=@username AND Password=@password";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@username", txtUserName.Text.Trim());
+            cmd.Parameters.AddWithValue("@password", txtPassword.Text.Trim());
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            if (count>0)
             {
                 Response.Redirect("registration.aspx");
             }
+            else
+            {
+                lblResult.Text = "Invalid UserName and Password";
+            }
+            conn.Close();
         }
 
     }
