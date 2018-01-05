@@ -71,13 +71,19 @@
                             ValidationGroup="Registration"
                             required="true"
                             Display="Dynamic" />
+                        <br />
+                        <br />
+                        <%--Doctors lust--%>
+                        <asp:Label ID="Doctor" runat="server" Font-Bold="True" Font-Italic="False" Text="Doctor "></asp:Label>
+                        <asp:DropDownList ID="DropDownList1" runat="server">
+                        </asp:DropDownList>
                     </div>
                 </div>
                 <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-12">
 
 
 
-                    <%--City--%>
+                    <%--Postal Code--%>
                     <label for="firstCity">City</label>
                     <asp:TextBox ID="txtCity" CssClass="form-control" runat="server" />
                     <div>
@@ -90,7 +96,7 @@
                             required="true" />
                     </div>
 
-                    <%--Postal Code--%>
+                    <%--Address--%>
                     <label for="postalCode">Postal Code</label>
                     <asp:TextBox ID="txtPostalCode" CssClass="form-control" runat="server" />
                     <div>
@@ -111,7 +117,7 @@
                             ErrorMessage="* Invalid Postal Code" />
                     </div>
 
-                    <%--Address--%>
+                    <%--Telephone--%>
                     <label for="addressLabel">Address</label>
                     <asp:TextBox ID="txtAddress"
                         CssClass="form-control"
@@ -125,7 +131,7 @@
                             ValidationGroup="Registration"
                             required="true" />
                     </div>
-                    <%--Telephone--%>
+                    <%--Province--%>
                     <label for="telephoneLabel">Telephone</label>
                     <asp:TextBox ID="txtTelephone"
                         CssClass="form-control"
@@ -139,7 +145,8 @@
                             ValidationGroup="Registration"
                             required="true" />
                     </div>
-                    <%--Province--%>
+                    <%--<asp:Button runat="server" ID="btnRegister" CssClass="btn btn-success" Text="Create Account"
+                    ValidationGroup="Registration" OnClick="btnRegister_Click" /> --%>
                     <label for="birthDateLabel">Province</label>
                     <asp:DropDownList ID="ProvinceDropDownList"
                         runat="server">
@@ -156,14 +163,20 @@
                     </asp:DropDownList>
                     <br />
                     <br />
+                    <%--Date of apppointment--%>
+                    <asp:Label ID="Doctor0" runat="server" Font-Bold="True" Font-Italic="False" Text="Date of appointment: "></asp:Label>
+                    <br />
+                    <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                    <br />
 
 
                 </div>
+            &nbsp;&nbsp;&nbsp;
             </div>
             <div class="row">
 
-                <asp:Button runat="server" ID="btnRegister" CssClass="btn btn-success" Text="Create Account"
-                    ValidationGroup="Registration" OnClick="btnRegister_Click" />
+                <%--<asp:Button runat="server" ID="btnRegister" CssClass="btn btn-success" Text="Create Account"
+                    ValidationGroup="Registration" OnClick="btnRegister_Click" /> --%>
             </div>
         </div>
     </div>
