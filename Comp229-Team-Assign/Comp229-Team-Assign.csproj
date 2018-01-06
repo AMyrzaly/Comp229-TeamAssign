@@ -82,6 +82,7 @@
     <Content Include="registration.aspx" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <Content Include="main.Master" />
+    <Content Include="Documentation\Сlinic_Documentation.docx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
