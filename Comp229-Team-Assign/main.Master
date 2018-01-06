@@ -59,7 +59,6 @@
                                     <div id="anonymous" runat="server">
                                         <ul id="navigation" class="nav navbar-nav">
                                             <li><a runat="server" class="fa fa-home" href="Home.aspx"> Home</a></li>
-                                            <li><a runat="server" class="fa fa-address-book-o" href="Departments"> Departments</a></li>
                                             <li><a runat="server" class="fa fa-info" href="registration.aspx"> Registration</a></li>
                                             <li><a runat="server" class="fa fa-info" href="appointment.aspx"> Appointment</a></li>
                                             <li><a runat="server" class="fa fa-envelope-o" href="contact.aspx"> Contact us</a></li>

@@ -76,6 +76,17 @@
                         <%--Doctors lust--%>
                         <asp:Label ID="Doctor" runat="server" Font-Bold="True" Font-Italic="False" Text="Doctor "></asp:Label>
                         <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:ListItem Selected="True">General Doctor</asp:ListItem>
+                            <asp:ListItem>Gastroenterologist</asp:ListItem>
+                            <asp:ListItem>Gynaecologist</asp:ListItem>
+                            <asp:ListItem>Dermatologist</asp:ListItem>
+                            <asp:ListItem>Pediatrician</asp:ListItem>
+                            <asp:ListItem>Oncologist</asp:ListItem>
+                            <asp:ListItem>Phychiatrist</asp:ListItem>
+                            <asp:ListItem>Dentist</asp:ListItem>
+                            <asp:ListItem>Physycian</asp:ListItem>
+                            <asp:ListItem>Orologist</asp:ListItem>
+                            <asp:ListItem>Surgeon</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
@@ -175,8 +186,8 @@
             </div>
             <div class="row">
 
-                <%--<asp:Button runat="server" ID="btnRegister" CssClass="btn btn-success" Text="Create Account"
-                    ValidationGroup="Registration" OnClick="btnRegister_Click" /> --%>
+                <asp:Button runat="server" ID="btnRegister" CssClass="btn btn-success" Text="Make an appointment"
+                    ValidationGroup="Registration" OnClick="btnRegister_Click" /> 
             </div>
         </div>
     </div>

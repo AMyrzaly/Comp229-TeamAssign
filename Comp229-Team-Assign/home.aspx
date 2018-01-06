@@ -63,9 +63,17 @@
     <div id="content">
         <h1>Global Health Care is commited to provide excellence Service.</h1>
         <p class="center">
+            <h3>History:</h3>
+            We are new in the market since 2012. But so far we already do have a thounsads cliend from whole parts of the world.<br />
             We are the family Health Provider for your family.<br />
             We are providing healthcare service for thousands of Torontonian.<br />
-            Call us or register for an appiontment with our specialists. 
+            <h3>Contact us:</h3>
+            Call us or register for an appointment with our specialists. <br />
+            If you need help by making an appointment, you can call us 24/7.
+            <h3>Register for an appointment:</h3>
+            For your an appoinment, you have to be register in our database. <br />
+            If you do not know the name of the doctor that you want to visit, please choose "General Doctor".<br />
+            "General Doctor" will help you with your illness, and if it necessary "General Doctor" will redirect you to the right doctor.
         </p>
         <p>
             If you are not our user, you can register by click button below:
